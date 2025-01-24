@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.3
+
+- Update QR code icon
+---
+
 #### v1.0.30
 
 - Fix issue on the fill color for the icons on Android
