@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.4
+
+- Update the Digital Program icon on the Latest Message ribbon
+---
+
 #### v2.0.3
 
 - Update QR code icon
