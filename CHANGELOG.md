@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.5
+
+- Add calendar, gift, group, heart, leaf, mail, note, prayer, user, bell, feedback, shield and volunteer light Icons
+- Add group solid Icon
+---
+
 #### v2.0.4
 
 - Update the Digital Program icon on the Latest Message ribbon
