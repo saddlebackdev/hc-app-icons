@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.6
+
+- Add comments2 solid icon
+---
+
 #### v2.0.5
 
 - Add calendar, gift, group, heart, leaf, mail, note, prayer, user, bell, feedback, shield and volunteer light Icons
