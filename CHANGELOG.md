@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.7
+
+- Add play light icon
+---
+
 #### v2.0.6
 
 - Add comments2 solid icon
