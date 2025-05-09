@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.8
+
+- Update play light, play solid and gift2 icons
+---
+
 #### v2.0.7
 
 - Add play light icon
