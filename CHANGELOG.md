@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.10
+
+- Add Player Icons
+---
+
 #### v2.0.9
 
 - Add Occupation Icons
