@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.11
+
+- Add Camera Icon
+---
+
 #### v2.0.10
 
 - Add Player Icons
