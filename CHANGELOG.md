@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.12
+
+- Add Shield Solid and User Circle Icons
+---
+
 #### v2.0.11
 
 - Add Camera Icon
