@@ -2,7 +2,7 @@
 
 #### v2.0.13
 
-- Add Hamburger and Close Icons
+- Add Hamburger, Close and group user Icons
 ---
 
 #### v2.0.12
