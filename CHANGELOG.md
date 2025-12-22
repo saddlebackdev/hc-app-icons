@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.13
+
+- Add Hamburger, Close and group user Icons
+---
+
 #### v2.0.12
 
 - Add Shield Solid and User Circle Icons
