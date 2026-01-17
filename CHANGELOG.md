@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.17
+
+- Update Ministry Icons: use standard format matching existing icons, set fill to white
+---
+
 #### v2.0.16
 
 - Clean up Ministry Icons: remove unnecessary rects, clipPaths, and CSS styles for proper rendering
