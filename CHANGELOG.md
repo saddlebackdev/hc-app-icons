@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.16
+
+- Clean up Ministry Icons: remove unnecessary rects, clipPaths, and CSS styles for proper rendering
+---
+
 #### v2.0.15
 
 - Update Ministry Icons with proper vector versions
