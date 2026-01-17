@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.15
+
+- Update Ministry Icons with proper vector versions
+---
+
 #### v2.0.14
 
 - Add Ministry Icons: Children's Ministry, High School Ministry, Junior High Ministry, Saddleback Kids, Student Ministries
