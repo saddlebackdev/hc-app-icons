@@ -1,6 +1,6 @@
 {
     "name": "hc-app-icons",
-    "version": "2.0.17",
+    "version": "2.0.18",
     "main": "./dist/generated/",
     "types": "dist/types/index.d.ts",
     "typesVersions": {
