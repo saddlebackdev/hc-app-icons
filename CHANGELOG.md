@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.18
+
+- Rename Ministry Icons: student-ministries → youth-ministry, childrens-ministry → college-ministry
+- Add new icons: diversity-solid, ssm-solid, playback-production-solid
+---
+
 #### v2.0.17
 
 - Update Ministry Icons: use standard format matching existing icons, set fill to white
