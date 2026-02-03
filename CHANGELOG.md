@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.19
+
+- Add Celebrate Recovery and Mental Health icons: celebrate-recovery, mental-health-lite, mental-health-solid
+---
+
 #### v2.0.18
 
 - Rename Ministry Icons: student-ministries → youth-ministry, childrens-ministry → college-ministry
