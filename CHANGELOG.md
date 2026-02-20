@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.20
+
+- Add Cart Icon
+---
+
 #### v2.0.19
 
 - Add Celebrate Recovery and Mental Health icons: celebrate-recovery, mental-health-lite, mental-health-solid
