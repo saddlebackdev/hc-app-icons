@@ -2,7 +2,7 @@
 
 #### v2.0.20
 
-- Add Cart Icon
+- Add Cart and Circle Close Light icons
 ---
 
 #### v2.0.19
