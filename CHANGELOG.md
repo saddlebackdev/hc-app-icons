@@ -2,7 +2,7 @@
 
 #### v2.0.20
 
-- Add Cart and Circle Close Light icons
+- Add Cart, Circle Close Light, church Light and Clock Light icons
 ---
 
 #### v2.0.19
