@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.20
+
+- Add Cart, Circle Close Light, church Light and Clock Light icons
+---
+
 #### v2.0.19
 
 - Add Celebrate Recovery and Mental Health icons: celebrate-recovery, mental-health-lite, mental-health-solid
