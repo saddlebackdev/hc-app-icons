@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.21
+
+- Add User Signed Up, and Subscribe icons
+---
+
 #### v2.0.20
 
 - Add Cart, Circle Close Light, church Light and Clock Light icons
