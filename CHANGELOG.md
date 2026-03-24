@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.22
+
+- Add Money Light icon (circle dollar outline) for giving tab navigation
+
+---
+
 #### v2.0.21
 
 - Add User Signed Up, and Subscribe icons
