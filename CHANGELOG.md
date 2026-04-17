@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.24
+
+- Add Map Light icon
+
+---
+
 #### v2.0.23
 
 - Add Money icon (circle dollar filled) for giving tab navigation
