@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.25
+
+- Add Share Story icons: `share-story`, `share-story-1` (chat bubble variants; exports `IconShareStory`, `IconShareStory1`)
+
+---
+
 #### v2.0.24
 
 - Add Map Light icon
