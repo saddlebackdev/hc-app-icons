@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.26
+
+- Add Category icon
+
+---
+
 #### v2.0.25
 
 - Add Share Story icons: `share-story`, `share-story-1` (chat bubble variants; exports `IconShareStory`, `IconShareStory1`)
