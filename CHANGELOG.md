@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.27
+
+- Add Cart Light icon
+
+---
+
 #### v2.0.26
 
 - Add Category icon
