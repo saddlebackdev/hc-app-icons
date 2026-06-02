@@ -1,6 +1,10 @@
 {
     "name": "hc-app-icons",
     "version": "2.0.27",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saddlebackdev/hc-app-icons.git"
+    },
     "main": "./dist/generated/",
     "types": "dist/types/index.d.ts",
     "typesVersions": {
