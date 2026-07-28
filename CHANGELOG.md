@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.28
+
+- Add Circle Check Light icon
+
+---
+
 #### v2.0.27
 
 - Add Cart Light icon
