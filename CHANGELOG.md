@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.30
+
+- Add House Light icon
+
+---
+
 #### v2.0.29
 
 - Add Contact Light icon
