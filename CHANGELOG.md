@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.31
+
+- Add Bible Reading icon
+
+---
+
 #### v2.0.30
 
 - Add House Light icon
