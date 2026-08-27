@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.32
+
+- Add Bolt, Circle Forward and Trophy icons
+
+---
+
 #### v2.0.31
 
 - Add Bible Reading icon
