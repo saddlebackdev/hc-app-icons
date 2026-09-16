@@ -2,6 +2,12 @@
 
 #### v2.0.32
 
+- Add Copy, Edit and Trophy Save
+
+---
+
+#### v2.0.32
+
 - Add Bolt, Circle Forward and Trophy icons
 
 ---
