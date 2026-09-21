@@ -1,6 +1,12 @@
 # Changelog
 
-#### v2.0.32
+#### v2.0.34
+
+- Add Highlight, Highlight Solid and Save Solid
+
+---
+
+#### v2.0.33
 
 - Add Copy, Edit and Trophy Save
 
