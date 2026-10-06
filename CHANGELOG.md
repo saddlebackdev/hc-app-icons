@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.35
+
+- Add My Journey Icons: activate-color, baptism-color, church-color, cross-color, give-color, group-color, serve-color, give and one-life
+
+---
+
 #### v2.0.34
 
 - Add Highlight, Highlight Solid and Save Solid
