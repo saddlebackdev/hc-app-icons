@@ -13,8 +13,15 @@ if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 
+/**
+ * Multi-color icons (`*-color.svg`) keep their own fills. Every other icon is single-color
+ * and has its fills stripped so apps can tint it.
+ */
+const isColorIcon = (file) => file.endsWith('-color.svg');
+
 function convertSvgToComponent(file) {
   const content = fs.readFileSync(path.join(ICONS_DIR, file), 'utf-8');
+  const colorIcon = isColorIcon(file);
 
   const optimizedSvg = optimize(content, {
     plugins: [
@@ -22,18 +29,26 @@ function convertSvgToComponent(file) {
         name: 'preset-default',
         params: {
           overrides: {
-            removeViewBox: false
+            removeViewBox: false,
+            // Keep colors exactly as authored on color icons. convertColors would turn
+            // "white" into "#fff", which apps commonly remap to their tint color (the
+            // companion app's .svgrrc does), repainting the icon's white details.
+            ...(colorIcon ? { convertColors: false } : {}),
           },
         },
       },
       'removeXMLNS',
       'convertStyleToAttrs',
-      {
-        name: 'removeAttrs',
-        params: {
-          attrs: ['fill']
-        }
-      },
+      ...(colorIcon
+        ? []
+        : [
+            {
+              name: 'removeAttrs',
+              params: {
+                attrs: ['fill'],
+              },
+            },
+          ]),
     ],
   });
 
