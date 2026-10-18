@@ -2,8 +2,10 @@
 
 #### v2.0.36
 
-- Add activate-new, baptism-color, one-life-color, pray-color
-- Update the buildIcons script to handle colored icons
+- Add activate-logo, one-life-color and prayer-color
+- Fix: multi-color icons now keep their colors in the SVG files. In 2.0.35 their fills were stripped, so activate-color, baptism-color, church-color, cross-color, give-color, group-color and serve-color rendered as a single color. Apps that tinted these icons will now see their designed colors.
+- Fix: multi-color web components no longer get `fill="currentColor"` on the root `<svg>`
+- Move multi-color icons to `src/v2/color-icons`; icon names and import paths are unchanged
 
 ---
 
