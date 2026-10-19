@@ -3,12 +3,11 @@ import path from 'path';
 import { transform } from '@svgr/core';
 import { optimize } from 'svgo';
 import { fileURLToPath } from 'url';
-import { parseFileName } from './utils.mjs';
+import { getIconSources, parseFileName } from './utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const ICONS_DIR = path.join(__dirname, '../src/v2/icons');
 const OUTPUT_DIR = path.join(__dirname, '../generated/v2/web/components');
 
 
@@ -16,8 +15,8 @@ if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 
-async function convertSvgToComponent(file) {
-  const content = fs.readFileSync(path.join(ICONS_DIR, file), 'utf-8');
+async function convertSvgToComponent({ file, filePath, multiColor }) {
+  const content = fs.readFileSync(filePath, 'utf-8');
   const componentName = 'Icon' + parseFileName(path.basename(file, '.svg'));
 
   const optimizedSvg = optimize(content, {
@@ -56,7 +55,7 @@ async function convertSvgToComponent(file) {
             }: SVGProps<SVGSVGElement> & SVGRProps) => {
               return ${jsx};
             };
-            export default generateIcon(${componentName});
+            export default generateIcon(${componentName}, { multiColor: ${String(multiColor)} });
         `;
       },
     }
@@ -68,6 +67,4 @@ async function convertSvgToComponent(file) {
   );
 }
 
-fs.readdirSync(ICONS_DIR)
-  .filter(file => file.endsWith('.svg'))
-  .forEach(convertSvgToComponent);
+getIconSources().forEach(convertSvgToComponent);

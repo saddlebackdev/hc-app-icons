@@ -2,11 +2,11 @@ import fs from 'fs';
 import path from 'path';
 import { optimize } from 'svgo';
 import { fileURLToPath } from 'url';
+import { getIconSources } from './utils.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const ICONS_DIR = path.join(__dirname, '../src/v2/icons');
 const OUTPUT_DIR = path.join(__dirname, '../generated/v2/icons');
 
 if (!fs.existsSync(OUTPUT_DIR)) {
@@ -14,14 +14,11 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 }
 
 /**
- * Multi-color icons (`*-color.svg`) keep their own fills. Every other icon is single-color
- * and has its fills stripped so apps can tint it.
+ * Single-color icons (src/v2/icons) have their fills stripped so apps can tint them.
+ * Multi-color icons (src/v2/color-icons) keep their fills exactly as authored.
  */
-const isColorIcon = (file) => file.endsWith('-color.svg');
-
-function convertSvgToComponent(file) {
-  const content = fs.readFileSync(path.join(ICONS_DIR, file), 'utf-8');
-  const colorIcon = isColorIcon(file);
+function convertSvgToComponent({ file, filePath, multiColor }) {
+  const content = fs.readFileSync(filePath, 'utf-8');
 
   const optimizedSvg = optimize(content, {
     plugins: [
@@ -30,16 +27,16 @@ function convertSvgToComponent(file) {
         params: {
           overrides: {
             removeViewBox: false,
-            // Keep colors exactly as authored on color icons. convertColors would turn
+            // Keep colors exactly as authored on multi-color icons. convertColors would turn
             // "white" into "#fff", which apps commonly remap to their tint color (the
             // companion app's .svgrrc does), repainting the icon's white details.
-            ...(colorIcon ? { convertColors: false } : {}),
+            ...(multiColor ? { convertColors: false } : {}),
           },
         },
       },
       'removeXMLNS',
       'convertStyleToAttrs',
-      ...(colorIcon
+      ...(multiColor
         ? []
         : [
             {
@@ -58,6 +55,4 @@ function convertSvgToComponent(file) {
   );
 }
 
-fs.readdirSync(ICONS_DIR)
-  .filter(file => file.endsWith('.svg'))
-  .forEach(convertSvgToComponent);
+getIconSources().forEach(convertSvgToComponent);
