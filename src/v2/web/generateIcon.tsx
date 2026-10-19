@@ -17,11 +17,20 @@ function IconBase(props: IIconBaseProps) {
   );
 }
 
-export default function generateIcon(IconComponent: IIconComponent) {
+interface IGenerateIconOptions {
+  // Multi-color icons keep their authored fills instead of inheriting the text color.
+  multiColor?: boolean;
+}
+
+export default function generateIcon(
+  IconComponent: IIconComponent,
+  { multiColor = false }: IGenerateIconOptions = {}
+) {
   const Icon: IIconComponentType = (props: IIconBaseProps) => {
     return (
       <IconBase {...props}>
-        <IconComponent fill="currentColor" />
+        {/* Passing fill={undefined} would override the svg's own fill="none", so omit it. */}
+        <IconComponent {...(multiColor ? {} : { fill: 'currentColor' })} />
       </IconBase>
     );
   };
