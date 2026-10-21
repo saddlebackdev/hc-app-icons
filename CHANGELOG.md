@@ -1,5 +1,11 @@
 # Changelog
 
+#### v2.0.37
+
+- Add Trophy multi-color Icons: trophy-church-color, trophy-give-color, trophy-prayer-color
+
+---
+
 #### v2.0.36
 
 - Add activate-logo, one-life-color and prayer-color
